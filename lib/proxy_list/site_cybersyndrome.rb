@@ -5,7 +5,7 @@ module ProxyList
     ##
     # initialize
     # @params [String] country_code
-    def initialize(contry_code)
+    def initialize(country_code)
       @url.gsub!(/COUNTRY_CODE/,country_code)
     end
 

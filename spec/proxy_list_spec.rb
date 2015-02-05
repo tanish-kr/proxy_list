@@ -5,7 +5,8 @@ describe ProxyList do
     expect(ProxyList::VERSION).not_to be nil
   end
 
-  it 'does something useful' do
-    ProxyList.get_lists
+  it 'get proxy list' do
+    puts ProxyList.get_lists
+    expect(ProxyList.get_lists.count).to be > 0
   end
 end
