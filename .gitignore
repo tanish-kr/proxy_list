@@ -14,3 +14,4 @@
 mkmf.log
 .rbenv-gemsets
 *.gem
+log/
