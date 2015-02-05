@@ -16,7 +16,6 @@ module ProxyList
       session = Capybara::Session.new(:poltergeist)
       session.driver.headers = {'User-Agent' => USER_AGENTS.sample}
       session.visit(@@url)
-      session.save_screenshot "proxy_site.png"
       proxy_lists = []
       session.all(:xpath,"/html/body/div[1]/div[2]/table//tr[not(@class='Caption')]").each do |node|
         if !node.text.nil? && node.has_xpath?('td[3]')
