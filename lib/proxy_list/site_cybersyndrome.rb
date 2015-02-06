@@ -19,7 +19,7 @@ module ProxyList
       proxy_lists = []
       session.all(:xpath,"id('div_result')/table//tr/td[2]").each do |node|
         if !node.text.nil?
-          proxy_lists.push(node.text)
+          proxy_lists.push("http://#{node.text}")
         end
       end
       proxy_lists
