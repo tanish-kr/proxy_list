@@ -22,6 +22,7 @@ module ProxyList
           proxy_lists.push("http://#{node.text}")
         end
       end
+      Capybara.reset_sessions!
       proxy_lists
     end
   end
