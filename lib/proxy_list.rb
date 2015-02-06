@@ -23,5 +23,8 @@ module ProxyList
   # @params [String] country_code ISO two byte code
   def self.get_lists(country_code='US')
      proxy_lists = ProxyList::SiteFreeproxylists.new(country_code).proxy_lists
+     proxy_lists.concat(ProxyList::SiteSpys.new(country_code).proxy_lists)
+     proxy_lists.concat(ProxyList::SiteCybersyndrome.new(country_code).proxy_lists)
+     proxy_lists.uniq
   end
 end
