@@ -9,7 +9,9 @@ require 'proxy_list/site_freeproxylists'
 require 'proxy_list/site_cybersyndrome'
 require 'proxy_list/site_spys'
 
+Capybara.current_driver = :poltergeist
 Capybara.javascript_driver = :poltergeist
+Capybara.run_server = false
 Capybara.register_driver :poltergeist do |app|
   Capybara::Poltergeist::Driver.new(app,{:js_errors => false,:timeout => 1000,
     :debug => false,:inspector => false,
