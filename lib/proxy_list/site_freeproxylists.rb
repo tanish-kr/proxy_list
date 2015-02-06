@@ -22,6 +22,7 @@ module ProxyList
           proxy_lists.push("#{node.find(:xpath,'td[3]').text.downcase}://#{node.find(:xpath,'td[1]').text}:#{node.find(:xpath,'td[2]').text}")
         end
       end
+      Capybara.reset_sessions!
       proxy_lists
     end
 
