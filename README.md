@@ -1,4 +1,5 @@
-# ProxyList
+# ProxyList 
+[![Build Status](https://travis-ci.org/tatsu07/proxy_list.svg?branch=master)](https://travis-ci.org/tatsu07/proxy_list) [![Coverage Status](https://coveralls.io/repos/tatsu07/proxy_list/badge.svg)](https://coveralls.io/r/tatsu07/proxy_list)
 
 Get Free Proxy List
 
