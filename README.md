@@ -1,6 +1,10 @@
 # ProxyList
 
-TODO: Write a gem description
+Get Free Proxy List
+
+## Environment  
+
+・[phantomjs](http://phantomjs.org/)
 
 ## Installation
 
@@ -20,7 +24,15 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+The country of proxy you can get by specifying the ISO country code  
+
+```ruby
+require 'proxy_list'  
+#default US free proxy  
+proxy_list = ProxyList.get_lists  
+#useage country code
+proxy_list = ProxyList.get_lists('GB')
+```
 
 ## Contributing
 
