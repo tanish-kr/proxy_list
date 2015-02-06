@@ -23,6 +23,7 @@ module ProxyList
         end
       end
       Capybara.reset_sessions!
+      session.driver.quit
       proxy_lists
     end
 
