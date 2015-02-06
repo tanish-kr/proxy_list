@@ -8,9 +8,10 @@ Gem::Specification.new do |spec|
   spec.version       = ProxyList::VERSION
   spec.authors       = ["tatsunori_nishikori"]
   spec.email         = ["tora.1986.tatsu@gmail.com"]
-  spec.summary       = "get proxy list"
+  spec.summary       = "I get a free proxy from the Web"
   spec.description   = "get free proxy list"
   spec.homepage      = ""
+  spec.required_ruby_version = '>= 1.9.3'
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
